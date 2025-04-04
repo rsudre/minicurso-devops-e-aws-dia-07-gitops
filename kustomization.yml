@@ -6,6 +6,6 @@ resources:
 images:
 - name: 968225077300.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
   newName: 968225077300.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
-  newTag: d955215a955e168637bfb7f27c598726df7ab70b
+  newTag: 1cc2a3cffb5b2df87efbdc4c03c25e8f1db6100d
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
