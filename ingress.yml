@@ -5,7 +5,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/load-balancer-name: devops-na-nuvem-ingress
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/subnets: subnet-056975ec3eaa01da2,subnet-0b8f6c5c2051294b1
+    alb.ingress.kubernetes.io/subnets: subnet-0d6df6e49d24c7188,subnet-0311877c307ff8819
 spec:
   ingressClassName: alb
   rules:
