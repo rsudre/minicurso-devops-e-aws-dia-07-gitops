@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devops-na-nuvem-ingress
+  annotations:
+    alb.ingress.kubernetes.io/load-balancer-name: devops-na-nuvem-ingress
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/subnets: subnet-0d6df6e49d24c7188,subnet-0311877c307ff8819
+spec:
+  ingressClassName: alb
+  rules:
+  - http:
+      paths:
+      - path: /backend
+        pathType: Prefix
+        backend:
+          service:
+            name: backend
+            port:
+              number: 80
